@@ -1,85 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-
-.header{
-    height: 90px;
-    /* width: 100vw; */
-    width: 100%;
-    background: #1E3348;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.header {
+  height: 90px;
+  /* width: 100vw; */
+  width: 100%;
+  background: #1e3348;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* .logo{
     height: 90px;
     width: 100px;
 } */
-.headerLogo{
-    margin-top: 45px;
-    height: 100%;
-    width: 100%;
+.headerLogo {
+  margin-top: 40px;
 }
-.navList ul{
-    font-family: 'Righteous', cursive;
-    padding: 0;
+.navList ul {
+  font-family: "Righteous", cursive;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.navList ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #ffffff;
+}
+.navButton {
+  display: flex;
+  gap: 10px;
+}
+
+.menuIcon {
+  color: white;
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+
+@media (max-width: 948px) {
+  .navList {
+    display: none;
+  }
+  .navList2 ul {
+    font-family: "Righteous", cursive;
+    padding-top: 70px;
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-}
-.navList ul li a{
+  }
+  .navList2 ul li a {
     text-decoration: none;
     font-size: 17px;
-    color: #ffffff;
-}
-.navButton{
-    display: flex;
-    gap: 10px;
-}
+    color: black;
+  }
+  .menuIcon {
+    display: block;
+  }
 
-
-.menuIcon{
-    color: white;
+  .cancelIcon {
     position: absolute;
     right: 20px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 638px) {
+  .navButton {
     display: none;
-}
-
-
-@media(max-width:948px){
-    .navList{
-        display: none;
-    }
-    .navList2 ul{
-        font-family: 'Righteous', cursive;
-        padding-top: 70px;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .navList2 ul li a{
-        text-decoration: none;
-        font-size: 17px;
-        color: black;
-    }
-    .menuIcon{
-        display: block;
-    }
-
-    .cancelIcon{
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-}
-
-@media(max-width:638px){
-    .navButton{
-        display: none;
-    }
-    .header{
-        justify-content: start;
-    }
-    
+  }
+  .header {
+    justify-content: start;
+  }
 }

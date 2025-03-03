@@ -1,136 +1,5 @@
-.main {
-  min-height: 100vh;
-  background: url("../public/resources/home/Home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-.mainCaption{
-  width: 60%;
-  text-align: center;
-}
-.mainCaptionChild{
-  /* width: 80%; */
-  font-size: 5rem;
-  font-weight: bold;
-  color: #15537E;
-}
-
-.bookTrip {
-  min-height: 100vh;
-}
-.searchTrip {
-  min-height: 290px;
-  width: 70%;
-  background: #f4f4f4;
-  /* border: 6px solid #0f4c75; */
-  border-radius: 16px;
-  position: relative;
-  z-index: 10;
-  padding: 1rem;
-}
-.searchTripBox {
-  height: 85%;
-  width: 100%;
-  margin: auto;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.searchTripBox h2 {
-  color: #0f4c75;
-}
-.route{
-  display: flex;
-  gap: 1.4rem;
-  font-size: 1.2rem;
-  color: #0f4c75;
-  font-weight: bold;
-  align-items: center;
-  border: 2px solid #A3A3A3;
-  padding: 1rem;
-  border-radius: 1.2rem;
-}
-.routeOpt{
-  display: flex;
-  gap: 1.2rem;
-}
-.travel{
-  font-size: 1.8rem;
-}
-.inputTrips {
-  display: flex;
-  /* justify-content: space-between; */
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.inputTrips h2{
-  font-size: 1.3rem;
-}
-.inputLocation {
-  width: 220px;
-  /* width: 24%; */
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  border: 2px solid #A3A3A3;
-  padding: 1rem;
-  border-radius: 1.2rem;
-}
-.inputLocation h2, .inputDate h2, .inputId h2{
-  font-weight: bold;
-  display: flex;
-  justify-content: start;
-  gap: 10px;
-  align-items: center;
-}
-.iconImage{
-  height: 30px;
-  width: 30px;
-}
-.inputDate {
-  width: 220px;
-  /* width: 24%; */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 2px solid #A3A3A3;
-  padding: 1rem;
-  border-radius: 1.2rem;
-}
-.inputId {
-  width: 220px;
-  /* width: 24%; */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 2px solid #A3A3A3;
-  padding: 1rem;
-  border-radius: 1.2rem;
-}
-.searchButton {
-  width: 150px;
-  /* background: red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 .topDestinations {
-  width: 90%;
+  /* width: 90%; */
   min-height: 250px;
   margin: 30px auto;
   /* background: red; */
@@ -139,35 +8,25 @@
   flex-direction: column;
   gap: 60px;
 }
-.topDestination h2{
-  font-weight: bold;
-}
-.topDestinationBox{
+.topDestinationBox {
+  margin: 30px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-}
-.topDestinations h2{
-  font-size: 2rem;
-  
+  gap: 50px;
 }
 
-.rawaanOffer{
+.rawaanOffer {
   padding: 20px;
-  min-height: 80vh;
-  background: #E7ECED;
+  /* min-height: 80vh; */
+  background: #e7eced;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.rawaanOffer h2{
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.offerBox{
+.offerBox {
   width: 90%;
   margin: 30px auto;
   display: flex;
@@ -175,11 +34,12 @@
   flex-wrap: wrap;
   gap: 50px;
 }
-.offer1{
-  height: 400px;
-  width: 420px;
+.offer1 {
+  /* height: 350px; */
+  padding: 20px;
+  width: 400px;
   border-radius: 16px;
-  background: #F4F4F4;
+  background: #f4f4f4;
   box-shadow: 0 4px 10px 0 #00000040;
   display: flex;
   flex-direction: column;
@@ -187,25 +47,8 @@
   align-items: center;
 }
 
-
-/* .tourVideo{
-  min-height: 100vh;
-  background: #8E99A0;
-  padding: 80px;
-  box-sizing: border-box;
-}
-.videoBox{
-  width: 75%;
-  height: 600px;
-  margin: auto;
-  background: white;
-  border-radius: 16px;
-  
-} */
-/*  */
-
-.testimonials{
-  min-height: 100vh;
+.testimonials {
+  /* min-height: 100vh; */
   width: 90%;
   margin: auto;
   padding: 40px;
@@ -215,123 +58,354 @@
   gap: 40px;
   color: #0f4c75;
 }
-.pastTripsGallery{
-  min-height: 100vh;
+.pastTripsGallery {
+  /* min-height: 100vh; */
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.pastTripsHeading{
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: black;
-}
-.pastTrips{
+.pastTrips {
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 50px;
 }
-.seeAllButton{
+.seeAllButton {
   margin: auto;
 }
-.testimonials h2{
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.testimonialBox{
+.testimonialBox {
   width: 90%;
-  min-height: 400px;
   margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  /* background: red; */
 }
-.testimonial1{
-  width: 560px;
-  min-height: 320px;
+.testimonial1 {
   border-radius: 16px;
   padding: 20px;
-  border: 3px solid #1E3348;
-  background: #D3D9DD;
+  border: 3px solid #1e3348;
+  background: #d3d9dd;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
-.testimonial1 p{
+.testimonial1 p {
   font-size: 20px;
 }
-.customerName{
+.customerName {
   display: flex;
   gap: 10px;
   justify-content: start;
   align-items: center;
 }
 
-@media(max-width:988px){
-  .mainCaption h1{
+/* carousel */
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+.mySwiper {
+  min-height: 320px;
+  width: 90%;
+}
+
+.swiperSlide {
+  font-size: 18px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.swiperSlideInner {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.swiperButton {
+  display: flex;
+  justify-content: end;
+}
+
+/*  */
+
+@media (max-width: 1533px) {
+  .testimonials {
+    width: 100%;
+    padding: 20px;
+  }
+  .offerBox {
+    width: 100%;
+    gap: 25px;
+  }
+  .topDestinationBox {
+    width: 100%;
+    gap: 25px;
+  }
+  .pastTrips {
+    justify-content: center;
+    gap: 25px;
+  }
+  .testimonialBox {
+    width: 100%;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .offer1 {
+    width: 350px;
+  }
+}
+@media (max-width: 988px) {
+  .mainCaption h1 {
     font-size: 2rem;
   }
-  .searchTrip{
+  .searchTrip {
     width: 90%;
   }
-  .inputLocation, .inputDate, .inputId{
+  .inputLocation,
+  .inputDate,
+  .inputId {
     width: 180px;
   }
-  .inputLocation h2{
+  .inputLocation h2 {
     font-size: 1rem;
   }
-  .inputData{
+  .inputData {
     width: 150px;
   }
-  .inputDate h2{
+  .inputDate h2 {
     font-size: 1rem;
   }
-  .inputId h2{
+  .inputId h2 {
     font-size: 1rem;
   }
-  .pastTrips{
+  .pastTrips {
     align-items: center;
     justify-content: center;
   }
+  .offer1 h2 {
+    font-size: 1.2rem;
+  }
 }
 
-@media(max-width:593px){
-  .route{
+@media (max-width: 810px) {
+  .offer1 {
+    width: 250px;
+    /* height: 250px; */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 593px) {
+  .offer1 {
+    width: 80%;
+  }
+  .mySwiper {
+    min-height: 250px;
+  }
+  .testimonial1 {
+    padding: 10px;
+    gap: 10px;
+  }
+  .testimonial1 p {
+    font-size: 12px;
+  }
+  .customerName h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .testimonials {
+    width: 100%;
+  }
+  .testimonialBox {
+    width: 100%;
+  }
+
+  .offer1 h2 {
+    font-size: 1rem;
+  }
+}
+
+/* V0 */
+.container {
+  background: url("../public/resources/home/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* max-width: 1200px; */
+  padding: 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0e4c75;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.bookingCard {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.travelModeSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.travelByText {
+  font-size: 1rem;
+  color: #333;
+}
+
+.travelOptions {
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+
+.travelOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.travelOption.active {
+  background-color: #f0f8ff;
+  color: #0e4c75;
+}
+
+.radioCircle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #0e4c75;
+  position: relative;
+}
+
+.travelOption.active .radioCircle::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0e4c75;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formFields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #0e4c75;
+  font-weight: 500;
+}
+
+.input::placeholder {
+  color: #0e4c75;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.customizeButton {
+  background-color: #0e4c75;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.customizeButton:hover {
+  background-color: #0a3a5c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formFields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formFields {
+    grid-template-columns: 1fr;
+  }
+
+  .travelModeSelector {
     flex-direction: column;
-    width: 300px;
   }
-  .inputTrips{
-    gap: 15px;
-  }
-  .inputLocation, .inputDate, .inputId{
-    width: 80%;
-  }
-  .inputData{
-    width: 80%;
-  }
-}
 
-@media(max-width:499px){
-    .mainCaption{
-      width: 100%;
-      font-size: 1rem;
-    }
-    .route{
-      width: 200px;
-    }
-    .inputLocation, .inputDate, .inputId{
-      width: 93%;
-    }
-    .testimonials{
-      width: 100%;
-    }
-    .testimonialBox{
-      width: 100%;
-    }
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .bookingCard {
+    padding: 1.5rem 1rem;
+  }
 }

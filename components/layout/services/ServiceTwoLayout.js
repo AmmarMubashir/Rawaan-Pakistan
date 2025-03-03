@@ -52,65 +52,64 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import required modules
+import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 import styles from "./ServiceTwoLayout.module.css";
 
-// import required modules
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import { Button } from "@mui/material";
 
-
-// 
-import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
+//
+import Backdrop from "@mui/material/Backdrop";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
 import ModalHotel from "./ModalHotel";
-// 
+//
 
 const hotels = [
   {
-    id:'1',
-    hotel:"Hotel 1"
+    id: "1",
+    hotel: "Hotel 1",
   },
   {
-    id:'2',
-    hotel:"Hotel 2"
+    id: "2",
+    hotel: "Hotel 2",
   },
   {
-    id:'3',
-    hotel:"Hotel 3"
+    id: "3",
+    hotel: "Hotel 3",
   },
   {
-    id:'4',
-    hotel:"Hotel 4"
+    id: "4",
+    hotel: "Hotel 4",
   },
-]
+];
 
 export default function App() {
   const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    bgcolor: "background.paper",
+    border: "2px solid #000",
     boxShadow: 24,
     p: 4,
   };
-  
+
   const [open, setOpen] = React.useState(false);
-  const [hotelData,setHotelData]=React.useState(null);
-  
+  const [hotelData, setHotelData] = React.useState(null);
+
   const handleOpen = (id) => {
     let hotelInfo;
     setOpen(true);
     hotelInfo = hotels.find((ht) => id === ht.id);
     // console.log(hotelData);
     // hotel=hotelData?.hotel;
-   setHotelData(hotelInfo)
-  }
+    setHotelData(hotelInfo);
+  };
   console.log(hotelData);
   const handleClose = () => setOpen(false);
   return (
@@ -144,22 +143,28 @@ export default function App() {
         modules={[Keyboard, Pagination, Navigation]}
         className={`mySwiper ${styles.mySwiper}`}
       >
-          <SwiperSlide className={styles.swiperSlide} onClick={() => handleOpen('1')}>
-            <div className={styles.swiperSlideInner}>
-              <Image
-                src="/resources/services/hotel.jpg"
-                alt="hotel img"
-                height={400}
-                width={500}
-              />
-              <h2>Hotel name 1</h2>
-              <p>Adress</p>
-              <div className={styles.swiperButton}>
-                <Button variant="contained">200 pkr</Button>
-              </div>
+        <SwiperSlide
+          className={styles.swiperSlide}
+          onClick={() => handleOpen("1")}
+        >
+          <div className={styles.swiperSlideInner}>
+            <Image
+              src="/resources/services/hotel.jpg"
+              alt="hotel img"
+              height={400}
+              width={500}
+            />
+            <h2>Hotel name 1</h2>
+            <p>Adress</p>
+            <div className={styles.swiperButton}>
+              <Button variant="contained">200 pkr</Button>
             </div>
-          </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}  onClick={() => handleOpen('2')}>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className={styles.swiperSlide}
+          onClick={() => handleOpen("2")}
+        >
           <div className={styles.swiperSlideInner}>
             <Image
               src="/resources/services/hotel.jpg"
@@ -174,7 +179,10 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide} onClick={() => handleOpen('3')}>
+        <SwiperSlide
+          className={styles.swiperSlide}
+          onClick={() => handleOpen("3")}
+        >
           <div className={styles.swiperSlideInner}>
             <Image
               src="/resources/services/hotel.jpg"
@@ -189,7 +197,10 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}  onClick={() => handleOpen('4')}>
+        <SwiperSlide
+          className={styles.swiperSlide}
+          onClick={() => handleOpen("4")}
+        >
           <div className={styles.swiperSlideInner}>
             <Image
               src="/resources/services/hotel.jpg"
@@ -225,9 +236,6 @@ export default function App() {
           </Box>
         </Fade>
       </Modal>
-      
     </>
   );
 }
-
-

@@ -13,36 +13,42 @@ const MainHeader = () => {
   return (
     <Fragment>
       <div className={styles.header}>
-        <div className={styles.logo}>
-          <Image src="/resources/about/navbarlogoRawaan.png" height={300} width={300} alt="logo" className={styles.headerLogo} />
-          {/* <img src="/resources/about/navbarlogoRawaan.png" /> */}
-        </div>
+        <Image
+          src="/resources/about/navbarlogoRawaan.png"
+          height={150}
+          width={150}
+          alt="logo"
+          className={styles.headerLogo}
+        />
+        {/* <div className={styles.logo}> */}
+        {/* <img src="/resources/about/navbarlogoRawaan.png" /> */}
+        {/* </div> */}
         {/* {login && ( */}
-          <div className={styles.navList}>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="services">Services</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/gallery">Gallery</Link>
-              </li>
-              {/* <li>
+        <div className={styles.navList}>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="services">Services</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/gallery">Gallery</Link>
+            </li>
+            {/* <li>
                 <Link href="#">Checkout</Link>
               </li> */}
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
         {/* )} */}
 
         <div className={styles.navButton}>
