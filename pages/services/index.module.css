@@ -1,0 +1,68 @@
+.stepperBox{
+    width: 80%;
+    min-height: 100vh;
+    margin: 4rem auto;
+    /* padding: 2rem auto; */
+    background: lightblue;
+}
+
+
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 4rem auto;
+  }
+  .formContainer{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    background: #EAEDEF;
+  }
+  .stepper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .stepIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: gray;
+  }
+  .activeStepIcon {
+    color: blue;
+  }
+  .stepperDetails{
+    min-height: 60vh;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+
+  @media(max-width:519px){
+    .root{
+      /* background: red; */
+      width: 100%;
+    }
+    .formContainer{
+      /* background: blue; */
+      width: 95%;
+      margin: auto;
+    }
+  }

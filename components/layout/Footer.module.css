@@ -1,0 +1,134 @@
+
+
+.footer{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    background:#1E3348;
+}
+
+.footerone{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.borderNone{
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.footerone h2, .footertwo h2, .footerthree h2, .footerfour h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.inText{
+    margin-top: 10px;
+    margin-left: -70px;
+}
+.socialMedia{
+    display: flex;
+    gap: 10px;
+}
+.socialIcon{
+    display: flex;
+    gap: 5px;
+}
+
+.footertwo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;    
+}
+.footertwo ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footertwo ul h2{
+    color: white;
+}
+.footertwo ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footerthree{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    
+}
+.footerthree ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerthree ul h2{
+    color: white;
+}
+.footerthree ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footerfour{
+    width: 20%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerfour h2{
+    color: white;
+}
+.footerfour div{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    color: white;
+}
+.adress{
+    width: 170px;
+}
+
+
+@media(max-width:1240px){
+    .footer{
+        gap: 20px;
+    }
+}
+@media(max-width:964px){
+    .footer{
+        gap: 8px;
+    }
+    .footerone{
+        width: 70%;
+    }
+    .footertwo{
+        width: 70%;
+    }
+    .footerthree{
+        width: 70%;
+    }
+    .footerfour{
+        width: 70%;
+    }
+}
+@media(max-width:660px){
+    
+
+}

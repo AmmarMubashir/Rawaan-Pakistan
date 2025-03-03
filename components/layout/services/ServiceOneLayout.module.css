@@ -1,0 +1,179 @@
+
+.serviceOneForm{
+    width: 100%;
+    /* background: green; */
+    display: flex;
+    justify-content: space-between;
+}
+.serviceOneLeft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* background: red; */
+}
+.serviceOneRight{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: blue; */
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.label{
+    font-size: 1.2rem;
+    color: #0F4C75;
+    font-weight: bold;
+}
+.input{
+    font-size: 1rem;
+    height: 3rem;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+}
+.destinationChoice{
+    display: flex;
+    width: 80%;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+.destinationChoiceInner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    /* background: red; */
+}
+.formControlCheck{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.formControlChoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personChoice{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+.adultChoice{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    /* background: red; */
+
+}
+.adultCounter{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    /* font-size: 2rem; */
+    font-weight: bold;
+    border-radius: 10px;
+    background: #658AA4;
+    color: white;
+    padding: 5px 15px;
+}
+.adultCounter p{
+    cursor: pointer;
+}
+
+
+/*  */
+
+.formControl1{
+    display: flex;
+    width: 80%;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    background: white;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+.stayInner{
+    display: flex;
+    gap: 40px;
+}
+.radioInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media(max-width:1240px){
+    .formControl1{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .serviceOneForm{
+        justify-content: center;
+    }
+    .serviceOneLeft{
+        width: 50%;
+        /* background: red; */
+    }
+    .serviceOneRight{
+        width: 50%;
+        /* background: blue; */
+    }
+    .destinationChoice{
+        width: 90%;
+    }
+    .personChoice{
+        width: 90%;
+    }
+    .adultChoice{
+        padding: 0;
+    }
+}
+@media (max-width:658px) {
+    .serviceOneForm{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .serviceOneLeft, .serviceOneRight{
+        width: 100%;
+    }
+    .formControl1{
+        width: 90%;
+    }
+    .input{
+        width: 90%;
+    }
+    
+}
+
+@media(max-width:353px){
+    .destinationChoice, .formControl, .formControl1, .input, .personChoice{
+        width: 100%;
+    }
+}

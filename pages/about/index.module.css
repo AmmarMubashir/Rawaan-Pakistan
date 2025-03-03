@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&family=Righteous&display=swap');
+
+
+.aboutTop{
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.about{
+    min-height: 75vh;
+    width: 80%;
+    padding-bottom: 50px;
+    margin: 100px auto 0 auto;
+}
+.about .heading{
+    width: 150px;
+    margin: auto;
+}
+.about .heading div{
+    height: 2px;
+    width: 70px;
+    background: black;
+    position: relative;
+    top: 35px;
+    left: 15px;
+}
+.about h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.visionContent{
+    font-family: 'Poppins', sans-serif;
+    width: 45%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.visionContent h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.visionImg{
+    width: 45%;
+}
+.visionImg img{
+    width: 100%;
+    
+}
+
+.aboutIcon{
+    margin-top: 50px;
+    min-height: 200px;
+    width: 85%;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* gap: 50px; */
+    margin: auto;
+    background: linear-gradient(180deg, #4B5563 0%, #C6C6C6 100%);
+}
+.selfIcon{
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;gap: 10px;
+    padding: 10px;
+    /* background: red; */
+    /* margin: auto; */
+}
+.selfIcon h3{
+    font-size: 35px;
+    color: #75E1FF;
+}
+.selfIcon{
+    font-size: 20px;
+    color:#FFFFFF;
+}
+
+.mission{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+.missionContent{
+    font-family: 'Poppins', sans-serif;
+    width: 45%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.missionContent h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.missionImg{
+    width: 45%;
+}
+.missionImg img{
+    width: 100%;
+    
+}
+
+.teams{
+    /* width: 450px;
+    height: 250px; */
+    width:70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.members .heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 150px;
+    margin: auto;
+}
+.members .heading div{
+    height: 2px;
+    width: 70px;
+    background: black;
+    position: relative;
+    top: 35px;
+    left: 15px;
+}
+.members h2{
+    font-family: 'Poppins', sans-serif;
+}
+.members{
+    /* margin-top: 100px; */
+    min-height: 100vh;
+    margin: auto;
+    background: rgba(198, 198, 198, 0.26);
+    padding-top: 50px;
+    /* display: flex;flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px; */
+}
+.teamMember{
+    height: 370px;
+    width: 300px;
+}
+.memberImg{
+    /* height: 100%;
+    width: 100%; */
+    background-size: cover;
+
+}
+.memberContent{
+    height: 90px;
+    width: 70%;
+    margin: auto;
+    background: linear-gradient(180deg, #105982 0%, #1793BB 100%);
+    border-radius: 25px;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+.memberContent h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.memberContent p{
+    font-family: 'Poppins', sans-serif;
+    color: #75E1FF;
+}
+
+
+
+
+@media(max-width:1445px){
+    .about{
+        width: 90%;
+    }
+    .vision{
+        padding-top: 50px;
+        width: 100%;
+        margin: auto;
+        /* display: flex;
+        justify-content: center; */
+    }
+    .visionContent{
+        width: 90%;
+    }
+    .visionImg{
+        width: 70%;
+    }
+
+    .mission{
+        padding-top: 50px;
+        width: 90%;
+        margin: auto;
+        /* display: flex;
+        justify-content: center; */
+    }
+    .missionContent{
+        width: 90%;
+    }
+    .missionImg{
+        width: 70%;
+        order: 1;
+    }
+}

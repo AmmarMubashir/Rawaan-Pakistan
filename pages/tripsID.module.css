@@ -1,0 +1,107 @@
+
+.singleTrip {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+}
+
+.singleTrip h1 {
+  color: #0f4c75;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.3rem;
+  /* background-color: red; */
+}
+
+.tripDetails {
+  width: 90%;
+  margin: 3rem auto auto auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tripContent h2, .tripActivities h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.tripContent {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /* gap: 1.3rem; */
+}
+.tripContent p {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.tripContentStart {
+  margin-top: 2rem;
+}
+
+.tripImg {
+  width: 45%;
+}
+.tripImg img {
+  width: 90%;
+  height: 90%;
+}
+/*  */
+
+.tripActivities {
+  width: 90%;
+  margin: 3rem auto auto auto;
+  padding: 2rem;
+
+
+}
+.activities{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.tripGallery{
+  display: grid;
+}
+
+
+
+@media (max-width: 993px) {
+  .tripImg img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 883px) {
+  .tripDetails {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .tripContent {
+    width: 90%;
+  }
+  .tripImg {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 648px) {
+  .tripContent {
+    width: 95%;
+  }
+  .tripImg {
+    width: 95%;
+  }
+  .tripContent p {
+    font-size: 1rem;
+  }
+  .tripImg {
+    width: 100%;
+  }
+  .activities{
+    justify-content: center;
+  }
+}

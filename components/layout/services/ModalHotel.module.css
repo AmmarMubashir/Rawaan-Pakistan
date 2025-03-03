@@ -1,0 +1,86 @@
+.modalHotel{
+    min-height: 50vh;
+    width: 700px;
+    display: flex;
+}
+.hotelImages{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hotelDetails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-left: 10px;
+}
+.hotelDetails h2{
+    font-size: 2.3rem;
+}
+.hotelHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hotelDetails p{
+    display: flex;
+    align-items: center;
+    color:#0F4C75 ;
+}
+
+.hotelDetails ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hotelDetails ul li{
+    font-size: 1rem;
+}
+.hotelSelection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hotelPrice span{
+    font-size: 15px;
+}
+.hotelPrice p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.hotelImages img{
+    width: 44%;
+    height: 44%;
+}
+
+@media(max-width:809px){
+    .modalHotel{
+        width: 550px;
+        
+    }
+}
+
+@media(max-width:651px){
+    .modalHotel{
+        flex-direction: column;
+        gap: 20px;
+        width: 400px;
+    }
+    .hotelImages, .hotelDetails{
+        width: 90%;
+    }
+    .hotelImages{
+        gap: 15px;
+    }
+}
+
+@media(max-width:497px){
+    .modalHotel{
+        width: 250px;
+    }
+}
