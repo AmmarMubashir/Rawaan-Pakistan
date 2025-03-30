@@ -1,42 +1,66 @@
 import React from "react";
 import styles from "./BlogLayout.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 const BlogLayout = () => {
   return (
-    <div className={styles.blogDetails}>
-      <div className={styles.singleBlog}>
-        <div className={styles.blogTitle}>
-          <h1>Blog title heading will go here</h1>
-          <p>Published on 11 jan 2002</p>
-        </div>
-        <div className={styles.blogImg}>
-          <img src="/resources/blog/singleBlog.png" />
-        </div>
-        <div className={styles.blogContent}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisl
-            malesuada molestie. Fusce a nisl eu sem sagittis ornare at congue
-            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
-            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisl
-            malesuada molestie. Fusce a nisl eu sem sagittis ornare at congue
-            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
-            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisl
-            malesuada molestie. Fusce a nisl eu sem sagittis ornare at congue
-            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
-            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
-          </p>
-        </div>
+    <main className={styles.container}>
+      <div className={styles.breadcrumbs}>
+        <Link href="/blog">Blog</Link> &gt;{" "}
+        <Link href="/blog/category">Category</Link>
       </div>
-    </div>
+
+      <article className={styles.blogPost}>
+        <h1 className={styles.title}>Blog title heading will go here</h1>
+        <p className={styles.publishDate}>Published on 11 Jan 2022</p>
+
+        <div className={styles.shareContainer}>
+          <button className={styles.shareButton}>Share this post</button>
+        </div>
+
+        <div className={styles.imageContainer}>
+          <Image
+            src="/resources/blog/singleBlog.png"
+            alt="Mountain valley with river"
+            width={800}
+            height={400}
+            className={styles.featuredImage}
+          />
+        </div>
+
+        <div className={styles.content}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisi
+            malesuada molestie. Fusce a nisi eu sem sagittis ornare at congue
+            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
+            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisi
+            malesuada molestie. Fusce a nisi eu sem sagittis ornare at congue
+            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
+            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisi
+            malesuada molestie. Fusce a nisi eu sem sagittis ornare at congue
+            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
+            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            rutrum dui ac enim placerat sagittis. Sed a mauris nec nisi
+            malesuada molestie. Fusce a nisi eu sem sagittis ornare at congue
+            nisi. Mauris laoreet augue vel molestie condimentum. Aliquam
+            volutpat a nulla at eleifend. Aenean vitae vestibulum libero.
+          </p>
+        </div>
+      </article>
+    </main>
   );
 };
 

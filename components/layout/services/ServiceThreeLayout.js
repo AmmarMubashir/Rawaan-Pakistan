@@ -10,28 +10,68 @@ const ServiceThreeLayout = () => {
         <h2>Activetes offered by Rawaan Pakistan</h2>
         <div className={styles.galleryContainer}>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/hiking.jpg" alt="Image 1" />
+            <Image
+              src="/resources/services/activities/hiking.jpg"
+              alt="Image 1"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/mountainClimbing.jpg" alt="Image 2" />
+            <Image
+              src="/resources/services/activities/mountainClimbing.jpg"
+              alt="Image 2"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/hiking.jpg" alt="Image 3" />
+            <Image
+              src="/resources/services/activities/hiking.jpg"
+              alt="Image 3"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/zipLine.jpg" alt="Image 4" />
+            <Image
+              src="/resources/services/activities/zipLine.jpg"
+              alt="Image 4"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/boating.jpg" alt="Image 5" />
+            <Image
+              src="/resources/services/activities/boating.jpg"
+              alt="Image 5"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/jetSking.jpg" alt="Image 6" />
+            <Image
+              src="/resources/services/activities/jetSking.jpg"
+              alt="Image 6"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/boating.jpg" alt="Image 7" />
+            <Image
+              src="/resources/services/activities/boating.jpg"
+              alt="Image 7"
+              height={200}
+              width={150}
+            />
           </div>
           <div className={styles.galleryItem}>
-            <img src="/resources/services/activities/boneFire.jpg" alt="Image 8" />
+            <Image
+              src="/resources/services/activities/boneFire.jpg"
+              alt="Image 8"
+              height={200}
+              width={150}
+            />
           </div>
         </div>
       </div>
@@ -101,40 +141,54 @@ const ServiceThreeLayout = () => {
           </div>
         </div>
         <div class={styles.guideContainer}>
-        <div class={styles.guideBox}>
+          <div class={styles.guideBox}>
             <div className={styles.guideImg}>
-            <Image src="/resources/services/img1.png" alt="Image 1" height={200} width={150} />
+              <Image
+                src="/resources/services/img1.png"
+                alt="Image 1"
+                height={200}
+                width={150}
+              />
             </div>
             <div className={styles.guideDetails}>
-            <h3>Guide name</h3>
-            <p>Age : 25</p>
-            <p>Speak : English</p>
-            <Button variant="contained">Select</Button>
+              <h3>Guide name</h3>
+              <p>Age : 25</p>
+              <p>Speak : English</p>
+              <Button variant="contained">Select</Button>
             </div>
-        </div>
-        <div class={styles.guideBox}>
+          </div>
+          <div class={styles.guideBox}>
             <div className={styles.guideImg}>
-            <Image src="/resources/services/img1.png" alt="Image 1" height={200} width={150} />
+              <Image
+                src="/resources/services/img1.png"
+                alt="Image 1"
+                height={200}
+                width={150}
+              />
             </div>
             <div className={styles.guideDetails}>
-            <h3>Guide name</h3>
-            <p>Age : 25</p>
-            <p>Speak : English</p>
-            <Button variant="contained">Select</Button>
+              <h3>Guide name</h3>
+              <p>Age : 25</p>
+              <p>Speak : English</p>
+              <Button variant="contained">Select</Button>
             </div>
-        </div>
-        <div class={styles.guideBox}>
+          </div>
+          <div class={styles.guideBox}>
             <div className={styles.guideImg}>
-            <Image src="/resources/services/img1.png" alt="Image 1" height={200} width={150} />
+              <Image
+                src="/resources/services/img1.png"
+                alt="Image 1"
+                height={200}
+                width={150}
+              />
             </div>
             <div className={styles.guideDetails}>
-            <h3>Guide name</h3>
-            <p>Age : 25</p>
-            <p>Speak : English</p>
-            <Button variant="contained">Select</Button>
+              <h3>Guide name</h3>
+              <p>Age : 25</p>
+              <p>Speak : English</p>
+              <Button variant="contained">Select</Button>
             </div>
-        </div>
-        
+          </div>
         </div>
       </div>
     </div>

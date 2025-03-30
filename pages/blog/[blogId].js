@@ -1,16 +1,16 @@
-import BlogLayout from '@/components/layout/BlogLayout';
-import { useRouter } from 'next/router';
-import React from 'react'
+import BlogLayout from "@/components/layout/BlogLayout";
+import { useRouter } from "next/router";
+import React from "react";
 
-const blogDetails = () => {
-    const router = useRouter();
-    const blogId = router.query.blogId;
-    console.log(blogId);
+const BlogDetails = () => {
+  const router = useRouter();
+  const blogId = router.query.blogId;
+  console.log(blogId);
   return (
     <div>
-        <BlogLayout />
+      <BlogLayout />
     </div>
-  )
-}
+  );
+};
 
-export default blogDetails
+export default BlogDetails;

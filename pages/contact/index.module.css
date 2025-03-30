@@ -22,12 +22,12 @@
   /* background-color: red; */
 }
 .contactContent h1 {
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #0f4c75;
 }
 .contactContent p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-align: justify;
 }
 .contactForm {
@@ -82,7 +82,7 @@
   /* background-color: red; */
 }
 .contactIcon h1 {
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #0f4c75;
   margin-left: 2rem;
@@ -107,18 +107,18 @@
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  color: #0F4C75;
+  color: #0f4c75;
 }
-.linkBox .icon{
-    height: 150px;
-    width: 150px;
-    /* color: #0F4C75; */
+.linkBox .icon {
+  height: 100px;
+  width: 100px;
+  /* color: #0F4C75; */
 }
-.linkBox p{
-    width: 80%;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: auto;
+.linkBox p {
+  width: 80%;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
 }
 /* .mail{
     width: 100%;
@@ -132,17 +132,17 @@
     width: 400px;
   }
   .contactContent h1 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
-  
-  .linkBox{
+
+  .linkBox {
     width: 25%;
     height: 300px;
     gap: 1rem;
   }
-  .linkBox p{
+  .linkBox p {
     width: 95%;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -157,30 +157,30 @@
   .formPaper {
     margin: auto;
   }
-  .contactLinks{
+  .contactLinks {
     justify-content: center;
     align-items: center;
   }
-  .linkBox{
+  .linkBox {
     height: 250px;
     padding: 1rem;
   }
-  .linkBox .icon{
+  .linkBox .icon {
     height: 100px;
   }
-  .linkBox p{
+  .linkBox p {
     font-size: 1rem;
     width: 100%;
   }
-  .mail{
+  .mail {
     width: 60%;
   }
 }
 
 @media (max-width: 740px) {
-    .linkBox{
-        width: 30%;
-    }
+  .linkBox {
+    width: 30%;
+  }
 }
 @media (max-width: 537px) {
   .input {
@@ -189,16 +189,16 @@
   .textArea {
     width: 90%;
   }
-  .contactLinks{
+  .contactLinks {
     flex-direction: column;
   }
-  .linkBox{
+  .linkBox {
     width: 80%;
   }
-  .linkBox p{
+  .linkBox p {
     width: 80%;
   }
-  .mail{
+  .mail {
     width: 70%;
   }
 }

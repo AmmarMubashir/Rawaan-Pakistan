@@ -1,13 +1,11 @@
 import { Fragment, useState } from "react";
 import styles from "./index.module.css";
 import { Button, Rating, TextField } from "@mui/material";
-import TripsLocation from "@/components/layout/tripLocationBox";
+
 import TopDestination from "@/components/layout/TopDestination";
 import TripsBlog from "@/components/layout/TripsBlog";
 import Image from "next/image";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import PersonIcon from "@mui/icons-material/Person";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -326,75 +324,6 @@ export default function Home() {
         </div>
         <h2>What our Customers say about us</h2>
         <div className={styles.testimonialBox}>
-          {/* <div className={styles.testimonial1}>
-            <Rating value={5} />
-            <p>
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare.&quot;
-            </p>
-            <div className={styles.customerName}>
-              <Image
-                src="/resources/home/customer.png"
-                alt="customer"
-                height={50}
-                width={50}
-              />
-              <h3>Name Surname</h3>
-            </div>
-          </div>
-          <div className={styles.testimonial1}>
-            <Rating value={5} />
-            <p>
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare.&quot;
-            </p>
-            <div className={styles.customerName}>
-              <Image
-                src="/resources/home/customer.png"
-                alt="customer"
-                height={50}
-                width={50}
-              />
-              <h3>Name Surname</h3>
-            </div>
-          </div>
-          <div className={styles.testimonial1}>
-            <Rating value={5} />
-            <p>
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare.&quot;
-            </p>
-            <div className={styles.customerName}>
-              <Image
-                src="/resources/home/customer.png"
-                alt="customer"
-                height={50}
-                width={50}
-              />
-              <h3>Name Surname</h3>
-            </div>
-          </div>
-          <div className={styles.testimonial1}>
-            <Rating value={5} />
-            <p>
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare.&quot;
-            </p>
-            <div className={styles.customerName}>
-              <Image
-                src="/resources/home/customer.png"
-                alt="customer"
-                height={50}
-                width={50}
-              />
-              <h3>Name Surname</h3>
-            </div>
-          </div> */}
-
           <Swiper
             breakpoints={{
               // Customize the number of slides per view for different screen widths
