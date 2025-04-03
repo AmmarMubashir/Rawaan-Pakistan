@@ -1,79 +1,248 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
 .header {
-  height: 90px;
-  /* width: 100vw; */
+  background-color: #1a3049;
   width: 100%;
-  background: #1e3348;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
   align-items: center;
 }
 
-/* .logo{
-    height: 90px;
-    width: 100px;
-} */
-.headerLogo {
-  margin-top: 40px;
-}
-.navList ul {
-  font-family: "Righteous", cursive;
-  padding: 0;
-  list-style-type: none;
+.logoWrapper {
   display: flex;
-  gap: 20px;
-}
-.navList ul li a {
-  text-decoration: none;
-  font-size: 17px;
-  color: #ffffff;
-}
-.navButton {
-  display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menuIcon {
+.logoImage {
+  margin-top: 25px;
+  width: 120px;
+  height: 90px;
+}
+
+.logoText {
   color: white;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+/* Update the navItem and navLink styles to add the underline animation */
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+.navLink:hover {
+  color: #4da8da;
+}
+
+/* Add the underline animation effect */
+.navLink::after {
+  content: "";
   position: absolute;
-  right: 20px;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4da8da;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.authButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.loginButton,
+.signupButton {
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.loginButton {
+  background-color: #3182ce;
+  color: white;
+}
+
+.signupButton {
+  background-color: #3182ce;
+  color: white;
+}
+
+.loginButton:hover,
+.signupButton:hover {
+  background-color: #2b6cb0;
+}
+
+.mobileMenuButton {
   display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 948px) {
+.mobileMenuButton.active {
+  transform: rotate(90deg);
+}
+
+/* Add a pulse animation to the mobile menu button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mobileMenuButton:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
   .navList {
-    display: none;
-  }
-  .navList2 ul {
-    font-family: "Righteous", cursive;
-    padding-top: 70px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .navList2 ul li a {
-    text-decoration: none;
-    font-size: 17px;
-    color: black;
-  }
-  .menuIcon {
-    display: block;
-  }
-
-  .cancelIcon {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    gap: 1rem;
   }
 }
 
-@media (max-width: 638px) {
-  .navButton {
-    display: none;
+/* Improve mobile styling */
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: block;
+    z-index: 101;
   }
-  .header {
-    justify-content: start;
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #1a3049;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .navOpen {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .navItem {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navLink {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 0.5rem 0;
+  }
+
+  /* Modify the underline animation for mobile */
+  .navLink::after {
+    height: 3px;
+    bottom: -5px;
+    background-color: #3182ce;
+  }
+
+  .authButtons {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #1a3049;
+    justify-content: center;
+    transition: bottom 0.3s ease;
+    z-index: 100;
+    gap: 1rem;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .authButtonsOpen {
+    bottom: 0;
+  }
+
+  .loginButton,
+  .signupButton {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
